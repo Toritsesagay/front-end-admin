@@ -82,7 +82,7 @@ export const checkIfAdminIsLoggedIn = () => {
         return
       }
     
-      response = await fetch(`https://back-end-zf7t.onrender.com/adminbytoken`, {
+      response = await fetch(`https://back-end-ym54.onrender.com/adminbytoken`, {
         method: "GET",
         headers:{
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch('https://back-end-zf7t.onrender.com/adminlogin', {
+      let response = await fetch('https://back-end-ym54.onrender.com/adminlogin', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -163,7 +163,7 @@ export const signupAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/adminsignup`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -228,7 +228,7 @@ export const fetchUsers = ()=>{
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch('https://back-end-zf7t.onrender.com/users', {
+      let response = await fetch('https://back-end-ym54.onrender.com/users', {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -289,7 +289,7 @@ export const deleteUser = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/users/${id}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/users/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -341,7 +341,7 @@ export const updateUser = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/users`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/users`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -398,7 +398,7 @@ export const fetchHistory = (user)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/history/${user}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/history/${user}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -449,7 +449,7 @@ export const updateHistory = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/history/${data._id}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/history/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -506,7 +506,7 @@ export const fetchAccounts = (id)=>{
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/admin-accounts/${id}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/admin-accounts/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -566,7 +566,7 @@ export const deleteAccount = (id)=>{
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/admin-accounts/${id}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/admin-accounts/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -616,7 +616,7 @@ export const updateAccount = (data)=>{
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/admin-accounts`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/admin-accounts`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -669,7 +669,7 @@ export const createAccount = (data,user)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/admin-accounts/${user}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/admin-accounts/${user}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -730,7 +730,7 @@ export const updateAdmin = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/admin/${data._id}`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -786,7 +786,7 @@ export const credit = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/credit`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/credit`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -840,7 +840,7 @@ export const debit = (data,user)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/debit`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/debit`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -897,7 +897,7 @@ export const sendEmail = (data,id)=>{
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`https://back-end-zf7t.onrender.com/sendemail`, {
+      let response = await fetch(`https://back-end-ym54.onrender.com/sendemail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
