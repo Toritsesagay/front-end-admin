@@ -116,7 +116,7 @@ export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch('https://back-end-kiaq.onrender.com/adminlogin', {
+      let response = await fetch('https://back-end-kiaqpay.onrender.com/adminlogin', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -175,7 +175,7 @@ export const signupAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://back-end-kiaq.onrender.com/adminsignup`, {
+      let response = await fetch(`https://back-end-kiaqpay.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
